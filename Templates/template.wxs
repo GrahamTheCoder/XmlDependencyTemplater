@@ -1,0 +1,30 @@
+<Wix xmlns="http://schemas.microsoft.com/wix/2003/01/wi">
+	<!-- 
+		WARNING: This file was auto-generated from a template using powershell
+	-->
+	<Fragment Id="_undottedModuleName_">
+		<DirectoryRef Id="INSTALLDIR">
+			<Component Id="_undottedModuleName_" Guid="_guid1_">
+				<File Id="_undottedModuleName_" Name="_shortName_.dll" LongName="_moduleName_.dll" DiskId="1" src="_moduleName_.dll"/>
+			</Component>
+		</DirectoryRef>
+
+		<!-- These get installed as part of the main product -->
+		<FeatureRef Id="Product">
+			<ComponentRef Id="_undottedModuleName_"/>_dependencies_
+		</FeatureRef>
+	</Fragment>
+
+	<Fragment Id="_undottedModuleName_Docs">
+		<DirectoryRef Id="INSTALLDIR">
+			<Component Id="_undottedModuleName_Docs" Guid="_guid2_">
+				<File Id="_undottedModuleName_Docs" Name="_shortName_.xml" LongName="_moduleName_.xml" DiskId="1" src="_moduleName_.xml"/>
+			</Component>
+		</DirectoryRef>
+
+		<!-- These get installed as part of the main product -->
+		<FeatureRef Id="Product">
+			<ComponentRef Id="_undottedModuleName_Docs"/>
+		</FeatureRef>
+	</Fragment>
+</Wix>

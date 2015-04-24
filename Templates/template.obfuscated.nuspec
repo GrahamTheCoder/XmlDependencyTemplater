@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<!-- http://docs.nuget.org/docs/reference/nuspec-reference -->
+<!-- WARNING: Generated from template -->
+<package >
+  <metadata>
+    <id>_moduleName_.Obfuscated</id>
+    <version>$version$</version>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>_moduleNameWithSpaces_ with SA error reporting</description>
+    <releaseNotes>$BuildInfoString$</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+	<dependencies>_dependencies_
+	</dependencies>
+  </metadata>
+  <files>
+    <file src="Build\Obfuscated\_moduleName_.dll" target="lib" />
+    <file src="Build\Obfuscated\_moduleName_.pdb" target="lib" />
+    <file src="Build\Release\_moduleName_.xml" target="lib" />
+    <file src="Build\Release\Wix2\_undottedModuleName_.wxs" target="wix2" />
+  </files>
+</package>

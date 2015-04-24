@@ -1,0 +1,33 @@
+<SmartAssemblyProject ProjectId="_guid1_" Version="2.0">
+    <MainAssemblyFileName>..\Build\Debug\_moduleName_.dll</MainAssemblyFileName>
+    <FriendlyName>TODO: Set this</FriendlyName>
+    <CompanyName>TODO: Set this</CompanyName>
+    <Configuration Name="Release">
+        <ApplicationName>Shared Utils</ApplicationName>
+        <Destination DestinationFileName=".\_moduleName_.dll" />
+        <Assemblies>
+            <Assembly AssemblyName="_moduleName_">
+                <Merging>
+                    <ResourcesCompression Compress="0" />
+                    <MemberRefsProxy Proxy="0" />
+                    <Pruning />
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" />
+                </Merging>
+                <Embedding />
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="1" NameMangling="1" />
+            <ExceptionReporting AlwaysContinueOnError="1" ReportExceptions="1" Template="res:{SmartExceptions}.NoUI.dll" UseCustomTemplate="0" />
+            <FeatureUsageReporting ReportUsages="0" />
+            <StrongNameSigning KeyFileName="TODO: Set this" Sign="1" />
+            <OtherProtections AddMetadataStream="1" SuppressIldasm="1" />
+            <StringsEncoding Encode="1" UseCache="1" />
+            <OtherOptimizations />
+            <Debugging CreatePDB="1" />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>
